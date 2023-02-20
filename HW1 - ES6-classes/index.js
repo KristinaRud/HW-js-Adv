@@ -43,15 +43,25 @@ class Employee {
 class Programmer extends Employee {
   constructor(name, age, salary, lang) {
     super(name, age, salary);
-    this.lang = lang;
+    this._lang = lang;
   }
 
   get salary() {
     return this._salary * 3;
   }
+
+  get lang() {
+    return this._lang;
+  }
+  set lang(lang) {
+    this._lang=lang;
+  }
 }
 
-const em = new Employee("john", 26, 2500);
-const pr = new Programmer("max", 30, 3000, "JS");
-console.log(pr, pr.salary);
-console.log(em, em.salary);
+const programmer1 = new Programmer('John', 30, 5000, ['JavaScript', 'Python']);
+const programmer2 = new Programmer('Kate', 25, 4000, ['Java', 'C++']);
+const programmer3 = new Programmer('Mike', 35, 6000, ['Ruby', 'PHP']);
+
+console.log(programmer1, programmer1.salary);
+console.log(programmer2, programmer2.salary);
+console.log(programmer3, programmer3.salary);
