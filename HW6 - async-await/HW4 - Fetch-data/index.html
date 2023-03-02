@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    button {
+      padding: 10px;
+      font-size: 18px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #3e8e41;
+    }
+
+    #root {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+
+    #root p {
+      margin: 0;
+      padding: 5px;
+    }
+
+    #root p:nth-child(odd) {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+
+<body>
+  <button id="find-ip-btn">Знайти по IP</button>
+  <div id="root"></div>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
